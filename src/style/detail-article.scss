@@ -1,0 +1,18 @@
+.detail-article {
+    background-color: white;
+
+    article {
+        padding-top: 300px;
+        padding-bottom: 300px;
+
+        @media screen and (max-width: 991px) {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+}

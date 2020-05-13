@@ -1,0 +1,29 @@
+header {
+    position: fixed;
+    z-index: 2;
+    padding: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;
+
+    @media screen and (max-width: 767px) {
+        padding: 30px;
+    }
+
+    &.black {
+        .logo {
+            color: black;
+        }
+    }
+
+    .logo {
+        font-size: 26px;
+        pointer-events: auto;
+        transition-duration: .5s;
+        transition-property: color;
+    }
+}

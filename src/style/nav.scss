@@ -1,0 +1,18 @@
+nav {
+    a {
+        pointer-events: auto;
+        font-size: 10px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        transition-duration: .5s;
+        transition-property: color;
+    }
+}
+
+header.black, footer.black {
+    nav {
+        a {
+            color: black;
+        }
+    }
+}

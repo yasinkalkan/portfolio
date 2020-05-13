@@ -1,0 +1,23 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: #ffffff;
+    color: black;
+
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+        width: 220px;
+        height: 40px;
+        margin-top: 0px;
+    }
+
+    &.black {
+        background-color: black;
+        color: #ffffff;
+    }
+}

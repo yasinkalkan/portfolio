@@ -1,0 +1,28 @@
+.credits {
+    list-style-type: none;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+    li {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+
+        span,
+        strong {
+            display: block;
+        }
+
+        span {
+            font-size: 10px;
+            font-weight: 300;
+            letter-spacing: 6px;
+            margin-bottom: 20px;
+        }
+
+        strong {
+            font-size: 30px;
+            font-weight: 800;
+        }
+    }
+}

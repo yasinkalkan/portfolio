@@ -1,0 +1,67 @@
+.page-not-found-section {
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 10px;
+        font-weight: 300;
+        letter-spacing: 6px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    a {
+        margin-top: 50px;
+    }
+}
+
+$primaryColor: #fff;
+$secondaryColor: #000;
+$steps: 50;
+
+.glitch {
+    position: relative;
+    color: $primaryColor;
+    text-transform: uppercase;
+    transform: scale3d(1, 1, 1);
+
+    &::before,
+    &::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        color: $primaryColor;
+        background: $secondaryColor;
+        width: 100%;
+    }
+
+    &::before {
+        left: 3px;
+        text-shadow: 3px 0 #67ff2c;
+        animation: glitch-effect 3s infinite linear alternate-reverse;
+    }
+
+    &::after {
+        left: -3px;
+        text-shadow: -3px 0 #ff2c5e;
+        animation: glitch-effect 2s infinite linear alternate-reverse;
+    }
+}
+
+@keyframes glitch-effect {
+    @for $i from 0 through $steps {
+        #{percentage($i * (1 / $steps))} {
+            clip-path: inset(#{random(100)}% 0 #{random(100)}% 0);
+        }
+    }
+}

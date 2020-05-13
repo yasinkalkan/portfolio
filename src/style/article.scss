@@ -1,0 +1,27 @@
+article {
+    &.summary {
+        span {
+            font-size: 10px;
+            font-weight: 300;
+            letter-spacing: 6px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 800;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 1.67;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: 767px) {
+                font-size: 16px;
+            }
+        }
+    }
+}
