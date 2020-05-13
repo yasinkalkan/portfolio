@@ -41,10 +41,12 @@ function Index(props) {
     useEffect(() => {
         window.addEventListener('scroll', onWindowsResize);
         document.getElementById('root').classList.add('full-height');
+        console.log('in')
 
         return () => {
             window.removeEventListener('scroll', onWindowsResize);
             document.getElementById('root').classList.remove('full-height');
+            console.log('out')
 
             dispatch({
                 type: 'FOOTER_COLOR_CHANGE',

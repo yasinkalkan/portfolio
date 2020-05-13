@@ -12,8 +12,8 @@
     "react-canvas-cursor": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-image-effects": "^1.0.0",
-    "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "react-transition-group": "^4.4.1",
     "react-vfx": "^0.1.4",
     "react-webgl-displacement-slider": "^1.0.0",
     "styled-components": "^5.1.0"
@@ -41,8 +41,11 @@
   },
   "devDependencies": {
     "axios": "^0.19.2",
+    "gsap": "^3.2.6",
+    "history": "^4.10.1",
     "react-redux": "^7.2.0",
     "react-router": "^3.2.6",
+    "react-router-dom": "^5.2.0",
     "react-slick": "^0.25.2",
     "redux": "^4.0.5",
     "slick-carousel": "^1.8.1"

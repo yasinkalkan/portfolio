@@ -4,21 +4,32 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    background-color: black;
 
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: grayscale(100%);
+    &.show {
+        figure {
+            width: 100%;
+        }
 
-    &::before {
-        content: "";
+        article {
+            top: 0;
+            opacity: 1;
+        }
+    }
+
+    figure {
         position: absolute;
-        left: 0;
+        right: 0;
         top: 0;
-        width: 100%;
+        width: 62%;
         height: 100%;
-        background-color: black;
-        opacity: 0.7;
+        opacity: 0.3;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: grayscale(100%);
+        transition-duration: 1s;
+        transition-property: width;
     }
 
     article {
@@ -26,6 +37,10 @@
         z-index: 2;
         color: white;
         text-align: center;
+        top: -30px;
+        opacity: 0;
+        transition-duration: 1s;
+        transition-property: top, opacity;
 
         strong {
             font-size: 10px;
