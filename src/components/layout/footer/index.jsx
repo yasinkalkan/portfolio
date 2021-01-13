@@ -18,19 +18,19 @@ function Index() {
                 }
             </nav>
             <div className="social-links">
-                <a target="blank" href="https://www.behance.net/yasinburakkalkan">
+                <a target="blank" href="https://www.behance.net/yasgo">
                     <i className="icon-behance"></i>
                 </a>
-                <a target="blank" href="https://codepen.io/yasinburakkalkan">
+                <a target="blank" href="https://codepen.io/yasgo">
                     <i className="icon-codepen"></i>
                 </a>
-                <a target="blank" href="https://dribbble.com/yasinkalkan">
+                <a target="blank" href="https://dribbble.com/yasgo">
                     <i className="icon-dribbble"></i>
                 </a>
                 <a href="mailto:yasinburakkalkan@gmail.com">
                     <i className="icon-envelope"></i>
                 </a>
-                <a target="blank" href="https://github.com/yasinkalkan">
+                <a target="blank" href="https://github.com/yasgo">
                     <i className="icon-github"></i>
                 </a>
             </div>
