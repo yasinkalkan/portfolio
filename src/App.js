@@ -13,7 +13,7 @@ import PortfolioDetail from "./pages/portfolio-detail";
 import ErrorPage from "./pages/404";
 
 function App() {
-    const DATA_URL = "https://raw.githubusercontent.com/yasinkalkan/yasinkalkan.github.io/master/data.json";
+    const DATA_URL = "https://raw.githubusercontent.com/yasgo/yasgo.github.io/master/data.json";
     const dispatch = useDispatch();
 
     useEffect(() => {
